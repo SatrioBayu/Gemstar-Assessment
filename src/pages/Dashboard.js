@@ -63,6 +63,10 @@ const Dashboard = () => {
         <button className="bg-light-blue rounded-full text-white p-2 w-full">Add new VC</button>
       </div>
       <Table data={vc} />
+      <p href="#" className="font-bold text-left hover:cursor-pointer hover:underline text-dark-blue">
+        See all approvals here
+      </p>
+      <p class="my-4 text-right text-sm">© Manning&Co. 2022</p>
     </div>
   );
 };

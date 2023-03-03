@@ -1,6 +1,6 @@
 const Table = ({ data }) => {
   return (
-    <table className="w-full table-auto overflow-x-auto mt-5 text-left">
+    <table className="w-full table-auto overflow-x-auto my-5 text-left">
       <thead className="text-md uppercase">
         <tr className="border-b-2">
           <th className="py-3 px-3">Image</th>

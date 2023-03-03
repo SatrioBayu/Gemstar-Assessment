@@ -1,11 +1,9 @@
-const Card = () => {
+const Card = ({ image, title, desc }) => {
   return (
-    <div className="bg-gray p-4 rounded-lg">
-      <img className="w-40" src="https://logos-download.com/wp-content/uploads/2016/12/DBS_Bank_logo_logotype.png" alt="" />
-      <h3 className="text-left">DBS Bank</h3>
-      <p className="text-left">
-        DBS Bank Limited is a Singaporean multinational banking and financial services corporation headquartered at the Marina Bay Financial Centre in the Marina Bay district of Singapore.
-      </p>
+    <div className="bg-gray p-4 hover:scale-105 duration-300 rounded-lg border-2 border-[#DDDDDD]">
+      <img className="w-40" src={image} alt="" />
+      <h3 className="text-left text-xl my-2 font-bold">{title}</h3>
+      <p className="text-left text-sm">{desc}</p>
     </div>
   );
 };

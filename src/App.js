@@ -1,19 +1,11 @@
 import logo from "./logo.svg";
 import "./App.css";
-import Card from "./components/Card";
-import GridCard from "./components/GridCard";
+import Dashboard from "./pages/Dashboard";
 
 function App() {
   return (
     <div className="App">
-      <GridCard>
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-      </GridCard>
+      <Dashboard />
     </div>
   );
 }

@@ -21,8 +21,8 @@ const data = [
 const ClientList = () => {
   return (
     <div>
-      <h1 className="text-4xl mt-5 font-bold ">Hi Radhika, welcome back!</h1>
-      <h3 className=" mt-10 text-3xl font-bold">Your client list</h3>
+      <h1 className="text-3xl mt-5 font-bold ">Hi Radhika, welcome back!</h1>
+      <h3 className=" mt-10 text-2xl font-bold">Your client list</h3>
       <p className=" font-normal">You currently servicing 3 clients</p>
       <GridCard>
         {data.map((res, index) => (

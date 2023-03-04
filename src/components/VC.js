@@ -34,7 +34,7 @@ const VC = () => {
 
   return (
     <div>
-      <h3 className=" mt-10 text-3xl font-bold">Recent VC Market</h3>
+      <h3 className=" mt-10 text-2xl font-bold">Recent VC Market</h3>
       <p className=" font-normal">You can find the recent VC price here</p>
       <div className="mt-5 grid sm:grid-cols-4 gap-4">
         <input

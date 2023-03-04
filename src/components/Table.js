@@ -25,7 +25,7 @@ const Table = ({ data, search, isLoading }) => {
                   <>
                     {/* Striped Row Color */}
                     {index % 2 == 0 ? (
-                      <tr className="bg-white border-b hover:bg-gray-600" key={res.id}>
+                      <tr className="bg-gray hover:bg-gray-600" key={res.id}>
                         <th className="font-medium py-3 px-3">
                           <img className="w-10 h-10 rounded-full" src={res.image} alt="" />
                         </th>
@@ -40,7 +40,7 @@ const Table = ({ data, search, isLoading }) => {
                         </td>
                       </tr>
                     ) : (
-                      <tr className="bg-gray border-b hover:bg-gray-600" key={res.id}>
+                      <tr className="bg-white hover:bg-gray-600" key={res.id}>
                         <th className="font-medium py-3 px-3">
                           <img className="w-10 h-10 rounded-full" src={res.image} alt="" />
                         </th>

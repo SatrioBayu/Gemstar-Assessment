@@ -33,3 +33,7 @@ GET https://api.coingecko.com/api/v3/coins/markets?vs_currency=idr&per_page=10
 
 - [React JS](https://reactjs.org/)
 - [Tailwind CSS](https://tailwindcss.com/docs/installation)
+
+## Deployment
+
+- [Link](https://gemstar-assessment.vercel.app/)

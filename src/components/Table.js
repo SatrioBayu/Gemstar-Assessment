@@ -21,21 +21,41 @@ const Table = ({ data, search, isLoading }) => {
             {data &&
               data
                 .filter((item) => item.name.toLowerCase().includes(search.toLowerCase()))
-                .map((res) => (
-                  <tr className="bg-white border-b" key={res.id}>
-                    <th className="font-medium py-3 px-3">
-                      <img className="w-10 h-10 rounded-full" src={res.image} alt="" />
-                    </th>
-                    <td>{res.name}</td>
-                    <td>
-                      <span className="font-bold">IDR </span>
-                      {res.current_price}
-                    </td>
-                    <td>
-                      <span className="font-bold">IDR </span>
-                      {res.market_cap}
-                    </td>
-                  </tr>
+                .map((res, index) => (
+                  <>
+                    {/* Striped Row Color */}
+                    {index % 2 == 0 ? (
+                      <tr className="bg-white border-b hover:bg-gray-600" key={res.id}>
+                        <th className="font-medium py-3 px-3">
+                          <img className="w-10 h-10 rounded-full" src={res.image} alt="" />
+                        </th>
+                        <td>{res.name}</td>
+                        <td>
+                          <span className="font-bold">IDR </span>
+                          {res.current_price}
+                        </td>
+                        <td>
+                          <span className="font-bold">IDR </span>
+                          {res.market_cap}
+                        </td>
+                      </tr>
+                    ) : (
+                      <tr className="bg-gray border-b hover:bg-gray-600" key={res.id}>
+                        <th className="font-medium py-3 px-3">
+                          <img className="w-10 h-10 rounded-full" src={res.image} alt="" />
+                        </th>
+                        <td>{res.name}</td>
+                        <td>
+                          <span className="font-bold">IDR </span>
+                          {res.current_price}
+                        </td>
+                        <td>
+                          <span className="font-bold">IDR </span>
+                          {res.market_cap}
+                        </td>
+                      </tr>
+                    )}
+                  </>
                 ))}
           </>
         )}

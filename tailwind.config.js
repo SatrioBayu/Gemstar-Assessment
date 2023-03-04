@@ -8,6 +8,7 @@ module.exports = {
       gray: "#EDEBEB",
       white: "#FFFFFF",
       black: "#000000",
+      "gray-600": "#cccaca",
     },
     container: {
       padding: "2rem",

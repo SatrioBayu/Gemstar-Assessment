@@ -6,7 +6,7 @@ import SidebarLowerBody from "./SidebarLowerBody";
 
 const Sidebar = () => {
   return (
-    <nav className="bg-dark-blue p-5 hidden sm:block text-white w-80">
+    <nav className="bg-dark-blue duration-150 hidden p-5 sm:block h-full sm:h-auto absolute sm:static text-white w-80">
       {/* Logo */}
       <div className="text-left">
         <img src={Logo} alt="Logo" className="w-full" />

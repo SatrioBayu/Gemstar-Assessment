@@ -3,10 +3,10 @@ const Table = ({ data, search, isLoading }) => {
     <table className="w-full table-auto overflow-x-auto my-5 text-left">
       <thead className="text-md uppercase">
         <tr className="border-b-2">
-          <th className="py-3 px-3">Image</th>
-          <th className="py-3">Virtual Currency Name</th>
-          <th className="py-3">Current Price</th>
-          <th className="py-3">Market Cap</th>
+          <th className="py-3 px-3 text-sm">Image</th>
+          <th className="py-3 text-sm">Virtual Currency Name</th>
+          <th className="py-3 text-sm">Current Price</th>
+          <th className="py-3 text-sm">Market Cap</th>
         </tr>
       </thead>
       <tbody>
